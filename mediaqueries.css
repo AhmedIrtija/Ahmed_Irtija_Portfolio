@@ -35,8 +35,9 @@
         height: 275px;
         width: 275px;
         margin: 0 auto 2rem;
+        justify-content: center;
     }
-    .abount-container {
+    .about-container {
         margin-top: 0;
     }
 }
@@ -56,11 +57,13 @@
         height: fit-content;
         margin-bottom: 2rem;
     }
-    .abount-container, .contact-info-upper-container, .btn-container {
+    .about-container, .contact-info-upper-container, .btn-container {
         flex-wrap: wrap;
     }
     .contact-info-container {
         margin: 0;
+        flex-direction: column;
+        align-items: center;
     }
     .contact-info-container p, .nav-links li a {
         font-size: 1rem;
@@ -89,6 +92,14 @@
     }
     .text-container {
         text-align: justify;
-        
+    }
+    .contact-info-title {
+        font-size: 1.25rem;
+    }
+    .container {
+        width: 90%;
+    }
+    input, textarea {
+        width: 100%;
     }
 }

@@ -135,6 +135,11 @@ a:hover {
 /* Navbar styles */
 nav, .nav-links {
     display: flex;
+    background-color: black;
+}
+
+.logo h1, .nav-links a {
+    color: white;
 }
 
 nav{
@@ -181,7 +186,7 @@ nav{
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: white;
     transition: all 0.3 ease-in-out;
 }
 
@@ -212,6 +217,7 @@ nav{
 
 .menu-links.open {
     max-height: 300px;
+    transition: max-height 0.5s ease-in-out;
 }
 
 .hamburger-icon.open span:first-child{
@@ -298,6 +304,10 @@ section {
     gap: 1rem;
 }
 
+.profile-pic {
+    border-radius: 5rem;
+}
+
 /* Icons */
 
 .icon {
@@ -351,6 +361,9 @@ section {
 .btn-container {
     gap: 1rem;
     display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap; 
 }
 
 /* About Section */
@@ -375,7 +388,7 @@ section {
 }
 
 .about-pic {
-    border-radius: 2rem;
+    border-radius: 5rem;
 }
 
 .arrow {
@@ -392,6 +405,10 @@ section {
     border: rgb(53,53,53) 0.1rem solid; 
     border-color: rgb(163,163,163);
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .section-container {
@@ -403,6 +420,15 @@ section {
     height: 400px;
     width: 400px;
     margin: auto 0;
+}
+
+.text-container p {
+    align-self: center;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.55rem; 
 }
 
 /* Experience Section */
@@ -455,14 +481,27 @@ article .icon {
 }
 
 .project-img {
-    border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.project-img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.5s;
 }
 
 .project-title {
     margin: 1rem;
     color: black;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
 }
 
 /* Contact Section */
@@ -476,7 +515,8 @@ article .icon {
 
 .contact-info-upper-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     border-radius: 2rem;
     border: rgb(53,53,53) 0.1rem solid;
     border-color: rgb(163,163,163);
@@ -485,22 +525,52 @@ article .icon {
     padding: 0.5rem;
 }
 
-.contant-info-container {
+.contact-info-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contact-info-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 0.5rem;
-    margin: 1rem;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background: rgba(146, 142, 136, 0.9);
+    border: 5px solid #000000;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.instagram {
+    cursor: pointer;
+    height: 2.5rem; 
 }
 
 /* Footer */
 
 footer {
     height: 26vh;
-    margin: 0 1rem;
-
+    margin: 0 auto;
+    background-color: black;
 }
 
 footer p {
     text-align: center; 
+    color: white;
 }
