@@ -161,7 +161,7 @@ nav{
 }
 
 .logo:hover {
-    cursor: default;
+    cursor: pointer;
 }
 
 /* Hamburger Menu */
@@ -244,6 +244,31 @@ nav{
     transform: none;
 }
 
+/* Smaller Navbar */
+.small-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 3rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 10px;
+    z-index: 1000;
+}
+
+.small-nav .logo h1 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.small-nav .nav-links {
+    gap: 1rem;
+    font-size: 1.25rem;
+}
+
 /* Hero Section */
 
 section {
@@ -285,6 +310,7 @@ section {
 
 .section__text__p1 {
     text-align: center;
+    margin-top: 1rem;
 }
 
 .section__text__p2 {

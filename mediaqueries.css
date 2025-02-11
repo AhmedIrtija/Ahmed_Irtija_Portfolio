@@ -62,7 +62,7 @@
     }
     .contact-info-container {
         margin: 0;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     .contact-info-container p, .nav-links li a {
@@ -101,5 +101,14 @@
     }
     input, textarea {
         width: 100%;
+    }
+    .small-nav .logo h1 {
+        display: none;
+    }
+    .small-nav .nav-links {
+        display: none;
+    }
+    .small-nav {
+        display: none;
     }
 }
